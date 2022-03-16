@@ -12,10 +12,10 @@ public class Wiatrak {
 
 
     public Wiatrak() {
-        speed = MEDIUM;
-        on = false;
-        radius = 5;
-        color = "biały";
+       int speed;
+       boolean on;
+       int radius;
+       String color;
     }
 
     public String wlanczony(boolean o) {
@@ -34,10 +34,10 @@ public class Wiatrak {
     }
 
     public void informacje() {
-        System.out.printf("Prędkość: %d%n", speed);
-        System.out.printf("Włączony: %s%n", wlanczony(on));
-        System.out.printf("Promień: %d%n", radius);
-        System.out.printf("Kolor: %s%n", color);
+        System.out.printf("Prędkość: %d\n", speed);
+        System.out.printf("Włączony: %s\n", on?"włączony" : "wyłączony");
+        System.out.printf("Promień: %d\n", radius);
+        System.out.printf("Kolor: %s\n", color);
     }
 
 
