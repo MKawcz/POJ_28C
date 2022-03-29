@@ -30,8 +30,7 @@ public class Main {
         konta[3] = new Konto(4,100);
         konta[4] = new Konto(5,100);
 
-        Scanner scanner = new Scanner();
 
-        int a = scanner.nextInt(System.in);
+
     }
 }
