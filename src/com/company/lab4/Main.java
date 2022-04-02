@@ -13,5 +13,22 @@ public class Main {
         System.out.println(circle.getPerimeter());*/
 
 
+        // zad4
+        /*Ulamek ulamek = new Ulamek();
+        Ulamek ulamek1 = new Ulamek();
+
+        ulamek.setLicznik(1);
+        ulamek.setMianownik(2);
+        ulamek1.setLicznik(3);
+        ulamek1.setMianownik(4);
+
+        ulamek.dodawanie(ulamek1);
+        ulamek.odejmowanie(ulamek1);
+        ulamek.mnozenie(ulamek1);
+        ulamek.dzielenie(ulamek1);
+        ulamek.wyswietl();
+        ulamek1.wyswietl();*/
+
+
     }
 }
