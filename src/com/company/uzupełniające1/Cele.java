@@ -1,17 +1,17 @@
 package com.company.uzupełniające1;
 
 public enum Cele {
-    PIERWSZEPIECCELOW(80),
-    KOLEJNETRZYCELE(60),
-    OSTATNIEDWA(40);
+    PIERWSZEPIECCELOW(0.2),
+    KOLEJNETRZYCELE(0.4),
+    OSTATNIEDWA(0.6);
 
-    int szansa;
+    double szansa;
 
-    Cele(int szansa) {
+    Cele(double szansa) {
         this.szansa = szansa;
     }
 
-    public int getSzansa() {
+    public double getSzansa() {
         return szansa;
     }
 }
