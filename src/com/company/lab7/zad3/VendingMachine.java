@@ -13,8 +13,7 @@ public class VendingMachine {
     private Product currentProduct;
     private Product paidProduct;
     private boolean waitingForPayment;
-    private Product jammedProduct;
-    private int counter = 0;
+
 
     public VendingMachine(Product[] products) {
         this.products = products;
@@ -64,13 +63,14 @@ public class VendingMachine {
 
     public Product takeProduct() {
         if (paidProduct != null) {
+            Random random = new Random();
             Product product = paidProduct;
             this.paidProduct = null;
-            counter++;
-            if(counter % 5 == 0) {
-                jammedProduct = product;
-                System.out.println("Maszyna się zacięła :(");
-                return null;
+            int zaciecie = random.nextInt(5);
+            if(zaciecie == 1) {
+                System.out.println("The machine is stuck :(");
+                shakeTheMachine();
+                return product;
             } else {
                 return product;
             }
@@ -83,11 +83,13 @@ public class VendingMachine {
     public void shakeTheMachine(){
         Random random = new Random();
         int odciecie = random.nextInt(2);
-        if(odciecie == 1){
-            System.out.println("Udało się odciąć maszynę!");
-            takeProduct();
-        } else {
-            System.out.println("Niestety, maszyna jest wciąż zacięta :(");
+        while(odciecie != 1){
+            System.out.println("*shaking*");
+            System.out.println("Unfortunately, the machine is still stuck :(");
+            odciecie = random.nextInt(2);
         }
+        System.out.println("*shaking*");
+        System.out.println("The machine is working again!");
     }
+
 }
