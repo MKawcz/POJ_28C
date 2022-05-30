@@ -9,7 +9,7 @@ public class Main {
         Kwadrat kwadrat3 = new Kwadrat(6);
         Prostokat prostokat = new Prostokat(2,6);
         Okrag okrag = new Okrag(7);
-        Figura[] figury = {kwadrat, prostokat, okrag};
+        Figura[] figury = {okrag, prostokat, prostokat};
 
         Arrays.sort(figury);
         for (Figura f: figury) {
