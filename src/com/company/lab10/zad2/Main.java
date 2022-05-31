@@ -18,13 +18,5 @@ public class Main {
             System.out.println("Obwod figury: " + f.obliczObwod());
         }
 
-
-
-        //zmien zeby porownywac rozne figury
-
-
-
-
-
     }
 }
